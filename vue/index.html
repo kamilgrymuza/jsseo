@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JS SEO experiments - VUE JS</title>
+  <meta name="description" content="JS SEO experiments by Bartosz Goralewicz and Kamil Grymuza">
+  <meta name="author" content="Bartosz Goralewicz, Kamil Grymuza">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css" >
+</head>
+
+<body>
+  <h1>VUE.js test</h1>
+
+  <p>
+    If JavaScript was parsed properly a few paragraphs of text should show up in the box below.
+    If this box is empty it means there was a problem and JavaScript was not parsed as expected.
+  </p>
+  <div class="app-wrapper">
+    <div id="app-root">
+      <h2>{{ header }}</h2>
+      <p>{{ p1 }}</p>
+      <p>{{ p2 }}</p>
+      <p v-html="p3"></p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app-root',
+      data: {
+        header: 'Wroclaw - a go-to city for VUE experts',
+        p1: "The bus station is just directly behind the Wroclaw Glowny train station. There's not much at the bus station itself, a shelter shed, vending machine, along with a parking area. If you walk across to the train station, you'll find bathrooms, as well as junk food, mc donalds, free wifi, general stores, along with there's 24hour security. If you get to a crazy hour in the morning, it's an ok place to wait till the morning to find your accommodation. The bus company PolskiBus is just a very inexpensive bus service provider, with paths all over Poland, and achieving into Berlin, Prague and Bratislarvia.",
+        p2: "While visiting Wroclaw, I learned that the city itself was once an extremely architecturally diverse city, but majority of the city was destroyed and reduced to only rubble only 65 years ago. Meaning, the city had to rebuild along with many of the beautiful architecture was lost. There are few attractions to see, along with the city is little and rather sleepy. It's a very calming city to visit, and Poland is less expensive than other countries in Europe, so it might be a nice calming break from traveling for a couple days. Here you'll find a very large cobblestoned paved area, with big roads mainly utilized for pedestrians along with the sidewalks are lined with little restaurants and cafes.",
+        p3: "Here you will find the <a href='/vue/test/'>City Hall, colourful buildings and a few churches</a>. The dwarfs are often the coolest aspect to Wroclaw. Cathedral Island is the destination for the site seeing of old buildings along with history, as it's Wroclaws oldest area. It's a small, yet beautiful walk throughout the churches, lane ways along with over the bridge back to the city centre. This is listed as a big draw on all the maps along with sign posts. Poland is much more spending budget friendly when compared with other European countries that i have visited. Food prices are substantially lower as well as accommodation. There doesn't seem to be many expenses for tickets to attractions. It had been quite close to Cathedral Island, and there is a supermarket quite close to the residence as well."
+      }
+    })
+  </script>
+
+  <footer>
+    This page is an SEO experiment designed by
+    <a href="https://www.linkedin.com/in/kamilgrymuza/" target="_blank">
+      Kamil Grymuza (JS development)
+    </a> &amp;
+    <a href="https://www.linkedin.com/in/goralewicz" target="_blank">
+      Bartosz Goralewicz (JS SEO)
+    </a>.
+  </footer>
+
+</body>
+</html>

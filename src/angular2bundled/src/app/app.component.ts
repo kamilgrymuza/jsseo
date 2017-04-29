@@ -1,0 +1,8 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: "<h2>How to bundle your Angular2 Moscow?</h2><p>In a latest survey of world cities based on Tripadvisor user reviews, Moscow was rated the 3rd worst for tourists. Even its most staunch opponent will have to acknowledge that the Russian capital is high-priced, bewildering and completely indifferent to visitors. In case it wasn't glaringly apparent, avoid any club with free entry for females, a disco ball on the flyer, or even more than 3 black 4x4s parked outside. Russian shop assistant: Finishes long text message. You will, without fail, encounter some eye wateringly poor service in Russia. Tens of thousands of political prisoners slaved away to construct the earth's best metro system: a wonderful, speedy reliable urban transportation solution. </p><p>Having said that, unlike in London or Paris, the space between metro stops is determined in light years, not metres. It's truth-in stereotypes time: Russians are rude and indifferent to strangers, but lump-inside your throat lovely to their friends. That doesn't mean ambling around to a vertiginous blond with a drink in your hand along with a grin on your face. As both Napoleon along with Hitler would tell you, when planning a visit to Russia, do not forget about the weather. November: freezing, driving rain ripping your umbrella to shreds before gathering in lake sized pools on the streets. March: the snow melts, exposing dead <a href='/angular2bundled/test/'>grass polka dotted with tramp corpses along with dog shit</a>, before gathering in lake sized pools on the streets.</p>"
+})
+
+export class AppComponent {}

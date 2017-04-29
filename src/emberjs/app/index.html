@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JS SEO experiments - Ember JS</title>
+  <script>document.write('<base href="/ember/"/>');</script>
+  <meta name="description" content="JS SEO experiments by Bartosz Goralewicz and Kamil Grymuza">
+  <meta name="author" content="Bartosz Goralewicz, Kamil Grymuza">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css" >
+
+  {{content-for "head"}}
+
+  <link rel="stylesheet" href="./assets/vendor.css">
+  <link rel="stylesheet" href="./assets/emberjs.css">
+
+  {{content-for "head-footer"}}
+</head>
+
+<body>
+  <h1>Ember.JS test</h1>
+
+  <p>
+    If JavaScript was parsed properly a few paragraphs of text should show up in the box below.
+    If this box is empty it means there was a problem and JavaScript was not parsed as expected.
+  </p>
+  <div class="app-wrapper">
+    <div id="app-root">
+      {{content-for "body"}}
+    </div>
+  </div>
+
+  <script src="./assets/vendor.js"></script>
+  <script src="./assets/emberjs.js"></script>
+
+  <footer>
+    This page is an SEO experiment designed by
+    <a href="https://www.linkedin.com/in/kamilgrymuza/" target="_blank">
+      Kamil Grymuza (JS development)
+    </a> &amp;
+    <a href="https://www.linkedin.com/in/goralewicz" target="_blank">
+      Bartosz Goralewicz (JS SEO)
+    </a>.
+  </footer>
+
+</body>
+</html>

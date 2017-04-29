@@ -1,0 +1,26 @@
+body {
+  padding: 25px;
+}
+
+h1,
+.main-intro p {
+  margin-bottom: 50px;
+}
+
+.main-intro h1 {
+  margin-bottom: 0;
+}
+
+.app-wrapper {
+  border: 2px dashed red;
+  min-height: 50px;
+  padding: 10px;
+}
+
+.experiments li {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding-top: 50px;
+}

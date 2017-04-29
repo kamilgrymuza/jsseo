@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JS SEO experiments - React JS inline</title>
+  <meta name="description" content="JS SEO experiments by Bartosz Goralewicz and Kamil Grymuza">
+  <meta name="author" content="Bartosz Goralewicz, Kamil Grymuza">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css" >
+</head>
+
+<body>
+  <h1>React.JS test (inline)</h1>
+
+  <p>
+    If JavaScript was parsed properly a few paragraphs of text should show up in the box below.
+    If this box is empty it means there was a problem and JavaScript was not parsed as expected.
+  </p>
+  <div class="app-wrapper">
+    <div id="app-root"></div>
+  </div>
+
+  <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+
+  <script type="text/javascript">
+    var Hello = React.createClass({
+      render: function() {
+        var contents = [
+          React.createElement('h2', null, 'Visiting Adelaide - best place on earth to learn React (Inline)'),
+          React.createElement('p', null, "Adelaide is a town known for the rolling, vineyard dotted hills that spill into the ocean. Adelaide is a town known for sunny climate, where winter conditions of 16 degrees, and sizzling 40 degree summertime heat waves could stretch on for several days. It is city of pink skied sunsets, rugged shoreline and insanely gorgeous beaches. Sometimes dubbed the 20 minute city, Adelaide can be very livable - where everything is just in close proximity. Mainly, Adelaide is a town in the midst of the renaissance. In the heart of Adelaide city stretches The River TorrensAdelaide's most significant river. Elder Park is just home to the Adelaide Festival Centre, Convention Centre, railway station and casino."),
+          React.createElement('p', null, "Heavily in the throws of the substantial redevelopment, this area is rapidly becoming the epicentre of the city. Just across the river sits the newly renovated Adelaide Oval. To get a behind the scenes glimpse into the interior workings of the oval, book a place on an Adelaide Oval Tour. What true north is just to a compass, North Terrace is just to Adelaide. The cultural hub of Adelaide city, North Terrace is just home to the Art Gallery, State Library, Museum, Adelaide University, war memorials, the Adelaide Botanic Gardens and Parliament House. While the whole of South Australia is unquestionably foodie, head to Adelaide's East End, and the Leigh Street\/Peel Street Precinct for the best restaurants on offer."),
+          React.createElement('p', {dangerouslySetInnerHTML: {__html: "From top end dining to <a href='/react-inline/test/'>inexpensive street eats</a>, you will find all of it in these precincts all win. If you are a fan of artisan markets, you will be spoilt for choice in Adelaide. Adelaide offers weekend markets, week day markets, twilight markets, farmers markets, vintage markets, Christmas markets and everything markets. Further afield, the Stirling Market, Victor Harbor Market and Willunga Farmers Market are typical stellar. Ebenezer Place is a quaint laneway saturated in independently owned boutiques, bustling cafes and some of Adelaide best wine cellars and food. Make sure to purchase locally made, exquisitely prepared by the Board of Objects, get coffee at Exchange Cafe or SAD, and pick up blossoms from Justine at East End Flower Market just across the way. Adelaide is home to a lot of indie cool hangouts, hole-in the wall pop ups and places that sense similar to your family room than cafe space. Check out the WoW coffee guide to Adelaide to discover the best places."}})
+        ];
+        return React.createElement(
+          'div', null, contents
+        );
+      }
+    });
+
+    ReactDOM.render(
+      React.createElement(Hello, {}, null),
+      document.getElementById('app-root')
+    );
+  </script>
+
+  <footer>
+    This page is an SEO experiment designed by
+    <a href="https://www.linkedin.com/in/kamilgrymuza/" target="_blank">
+      Kamil Grymuza (JS development)
+    </a> &amp;
+    <a href="https://www.linkedin.com/in/goralewicz" target="_blank">
+      Bartosz Goralewicz (JS SEO)
+    </a>.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+#OS X swag
+.DS_Store
+
+# Vim Swap files
+.*.sw[a-z]
+
