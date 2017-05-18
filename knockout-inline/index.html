@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JS SEO experiments - Knockout JS inline</title>
+  <meta name="description" content="JS SEO experiments by Bartosz Goralewicz and Kamil Grymuza">
+  <meta name="author" content="Bartosz Goralewicz, Kamil Grymuza">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css" >
+</head>
+
+<body>
+  <h1>Knockout.JS test (inline)</h1>
+
+  <p>
+    If JavaScript was parsed properly a few paragraphs of text should show up in the box below.
+    If this box is empty it means there was a problem and JavaScript was not parsed as expected.
+  </p>
+  <div class="app-wrapper">
+    <div id="app-root" data-bind="with: data">
+      <h2 data-bind="text: header"></h2>
+      <p data-bind="text: p1"></p>
+      <p data-bind="html: p2"></p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/knockout@3.4.2"></script>
+  
+  <script type="text/javascript">
+    function KoConstructor() {
+      this.data = {
+        header: 'What Are the Most Important Things You Need to Know About New York Hotels?',
+        p1: "New York Hotels offer many discount rates for their guests and visitors, time to time. NY is among the world's most thrilling and most visited travel destinations. It's a centre for culture, media, style, artwork as well as the home of top-notch museums, luxury hotels and lots of other interests for tourist. NY brings leisure and business visitors from all around the world. The hotel is not simply a spot where you opt for a stay, in a real hotel is more than simply an accommodation. In an excellent hotel, you could do party, observe you are any particular day, choose the dinner, or java, and shopping. ",
+        p2: "Surprise matter is that you could get a discount in most described categories. Yes, its true time to time resorts provide a discounts on a variety of services like decreases room rents, <a href='/knockout-inline/test/'>discount in foods</a>, discount in taxes and much more. The major hotels give the main discount rates offer particularly during the festival season like Christmas. Hotels offer assortments of discount rates like a discount in room rent, discount rates in foods, discount in room services etc. Some large hotels in New York offer big discount rates during special occasions. Even some time they supply free stays or leading discount in the stay at their hotels, but for the fact that you need to participate especially contest, which typically arranged by the hotel itself. It's possible for you to know about these discount rates, on the official website of the Their hotels and according to your spending budget can select a hotel for the stay. So next time whenever you'll make a course to visit the hotel in NY, get the full info regarding the available discount."
+      }
+    }
+
+    ko.applyBindings(new KoConstructor(), document.getElementById('app-root'));
+  </script>
+
+  <footer>
+    This page is an SEO experiment designed by
+    <a href="https://www.linkedin.com/in/kamilgrymuza/" target="_blank">
+      Kamil Grymuza (JS development)
+    </a> &amp;
+    <a href="https://www.linkedin.com/in/goralewicz" target="_blank">
+      Bartosz Goralewicz (JS SEO)
+    </a> &amp;
+    <a href="https://www.linkedin.com/in/robert-kisiel-586a9980/" target="_blank">
+      Robert Kisiel (Frontend Developer)
+    </a>.
+  </footer>
+
+</body>
+</html>
